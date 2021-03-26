@@ -4,9 +4,9 @@ import os
 import pandas as pd
 from dateutil.tz import gettz
 
-from boiler_constants import column_names
-from boiler_time_delta.corr_time_delta_calculator import CorrTimeDeltaCalculator
-from boiler_parsing_utils.utils import filter_by_timestamp_closed
+from boiler.constants import column_names
+from boiler.time_delta.corr_time_delta_calculator import CorrTimeDeltaCalculator
+from boiler.parsing_utils.utils import filter_by_timestamp_closed
 import config
 
 

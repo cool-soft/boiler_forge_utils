@@ -1,11 +1,11 @@
 import logging
 
 import config
-from boiler_heating_system.interpolators.heating_system_data_linear_interpolator \
+from boiler.heating_system.interpolators.heating_system_data_linear_interpolator \
     import HeatingSystemDataLinearInterpolator
-from boiler_heating_system.parsers.soft_m_csv_heating_system_data_parser import SoftMCSVHeatingSystemDataParser
-from boiler_parsing_utils.utils import filter_by_timestamp_closed
-from boiler_constants import column_names, circuits_id
+from boiler.heating_system.parsers.soft_m_csv_heating_system_data_parser import SoftMCSVHeatingSystemDataParser
+from boiler.parsing_utils.utils import filter_by_timestamp_closed
+from boiler.constants import circuits_id, column_names
 
 
 def main():

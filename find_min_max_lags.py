@@ -6,9 +6,9 @@ import numpy as np
 from dateutil.tz import gettz
 from matplotlib import pyplot as plt
 
-from boiler_constants import column_names
-from boiler_time_delta.corr_time_delta_calculator import CorrTimeDeltaCalculator
-from boiler_parsing_utils.utils import filter_by_timestamp_closed, average_values
+from boiler.constants import column_names
+from boiler.time_delta.corr_time_delta_calculator import CorrTimeDeltaCalculator
+from boiler.parsing_utils.utils import filter_by_timestamp_closed, average_values
 import config
 
 

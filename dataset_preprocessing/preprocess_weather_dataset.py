@@ -3,8 +3,8 @@ import os
 import logging
 
 import config
-from boiler_weater_info.interpolators.weather_data_linear_interpolator import WeatherDataLinearInterpolator
-from boiler_weater_info.parsers.soft_m_json_weather_data_parser import SoftMJSONWeatherDataParser
+from boiler.weater_info.interpolators.weather_data_linear_interpolator import WeatherDataLinearInterpolator
+from boiler.weater_info.parsers.soft_m_json_weather_data_parser import SoftMJSONWeatherDataParser
 
 
 def preprocess_weather_dataset():
