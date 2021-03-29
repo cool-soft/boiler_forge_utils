@@ -42,6 +42,7 @@ def main():
     input_repository.set_interpolator(home_data_interpolator)
     input_repository.set_storage_path(config.HOMES_SRC_DATASETS_DIR)
     input_repository.set_circuit_id(circuits_id.HEATING_CIRCUIT)
+    input_repository.set_encoding("UTF-8")
 
     output_repository = HeatingSystemPickleRepository()
     output_repository.set_storage_path(config.HOMES_PREPROCESSED_HEATING_CIRCUIT_DATASETS_DIR)
