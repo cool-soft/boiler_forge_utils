@@ -50,6 +50,7 @@ def main():
             )
             home_df = filter_by_timestamp_closed(home_df, start_datetime, end_datetime)
 
+            # noinspection PyUnresolvedReferences
             lag_array = np.empty(calulations_count, dtype=np.float)
             lag_dates = []
             for calc_number in range(calulations_count):
@@ -70,6 +71,7 @@ def main():
                 lag = lag_calculator.find_lag(boiler_out_temp, home_in_temp)
                 lag_array[calc_number] = lag
 
+            # noinspection PyUnresolvedReferences
             print(f"{home_dataset_name:25} "
                   f"min: {np.min(lag_array):5.3} "
                   f"max: {np.max(lag_array):5.3} "
