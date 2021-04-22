@@ -23,16 +23,16 @@ def main():
     allowed_homes = [
         "engelsa_35.pickle",
         "engelsa_37.pickle",
-        # "gaydara_1.pickle",
-        # "gaydara_22.pickle",
-        # "gaydara_26.pickle",
-        # "gaydara_28.pickle",
-        # "gaydara_30.pickle",
-        # "gaydara_32.pickle",
-        # "kuibysheva_10.pickle",
-        # "kuibysheva_14.pickle",
-        # "kuibysheva_16.pickle",
-        # "kuibysheva_8.pickle",
+        "gaydara_1.pickle",
+        "gaydara_22.pickle",
+        "gaydara_26.pickle",
+        "gaydara_28.pickle",
+        "gaydara_30.pickle",
+        "gaydara_32.pickle",
+        "kuibysheva_10.pickle",
+        "kuibysheva_14.pickle",
+        "kuibysheva_16.pickle",
+        "kuibysheva_8.pickle",
     ]
 
     start_datetime = pd.Timestamp(start_datetime)
@@ -80,11 +80,11 @@ def main():
                   f"max: {np.max(lags):4.2} "
                   f"mean: {np.mean(lags):4.2}")
 
-            plt.plot(lag_dates, lags, label=home_dataset_name)
-
-    plt.legend()
-    plt.grid(True)
-    plt.show()
+    #         plt.plot(lag_dates, lags, label=home_dataset_name)
+    #
+    # plt.legend()
+    # plt.grid(True)
+    # plt.show()
 
 
 if __name__ == '__main__':

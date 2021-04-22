@@ -20,9 +20,18 @@ def main():
     bins_count = 20
 
     datasets_and_lags = {
-        'engelsa_37.pickle': [4, 6, 5],
-        # 'gaydara_30.pickle': [2, 5, 3],
-        # 'gaydara_32.pickle': [3, 5, 3]
+        "engelsa_35.pickle": [6],
+        "engelsa_37.pickle": [6],
+        "gaydara_1.pickle": [3],
+        "gaydara_22.pickle": [2],
+        "gaydara_26.pickle": [4],
+        "gaydara_28.pickle": [5],
+        "gaydara_30.pickle": [5],
+        "gaydara_32.pickle": [5],
+        "kuibysheva_10.pickle": [3],
+        "kuibysheva_14.pickle": [3],
+        "kuibysheva_16.pickle": [3],
+        "kuibysheva_8.pickle": [3]
     }
 
     home_column = "HOME"
@@ -73,9 +82,9 @@ def main():
             correlation_df[home_abs_delta_column] = \
                 correlation_df[home_delta_column].abs()
             # correlation_df = correlation_df[correlation_df[home_abs_delta_column] <= 3 * std_var]
-            ax = correlation_df[home_delta_column].hist(bins=bins_count)
-            ax.set_title(f"{dataset_name} LAG: {lag}")
-            plt.show()
+            # ax = correlation_df[home_delta_column].hist(bins=bins_count)
+            # ax.set_title(f"{dataset_name} LAG: {lag}")
+            # plt.show()
 
             print(end="")
 
