@@ -7,7 +7,7 @@ from boiler.heating_system.interpolators.heating_system_data_linear_interpolator
 from boiler.heating_system.parsers.soft_m_csv_heating_system_data_parser import SoftMCSVHeatingSystemDataParser
 from boiler.heating_system.repository.heating_system_csv_repository import HeatingSystemCSVRepository
 from boiler.heating_system.repository.heating_system_pickle_repository import HeatingSystemPickleRepository
-from boiler_forge_utils.dataset_preprocessing.preprocess_homes_dataset import preprocess_dataset
+from boiler_forge_utils.soft_m.preprocess_homes_dataset import preprocess_dataset
 
 
 def main():
@@ -38,8 +38,8 @@ def main():
         input_repository,
         output_repository,
         dataset_name,
-        config.START_DATETIME,
-        config.END_DATETIME
+        config.SHARED_START_TIMESTAMP,
+        config.SHARED_END_TIMESTAMP
     )
 
 

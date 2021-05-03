@@ -10,8 +10,8 @@ from boiler.parsing_utils.utils import filter_by_timestamp_closed
 
 
 def main():
-    start_datetime = datetime.datetime(2019, 1, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
-    end_datetime = datetime.datetime(2019, 4, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
+    start_datetime = datetime.datetime(2019, 1, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
+    end_datetime = datetime.datetime(2019, 4, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
     boiler_round_step = 0.1
 
     left_quantile = 0.025

@@ -14,7 +14,7 @@ def preprocess_weather_dataset():
         weather_df = parser.parse_weather_data(f)
 
     interpolator = WeatherDataLinearInterpolator()
-    interpolator.interpolate_weather_data(weather_df, config.START_DATETIME, config.END_DATETIME, inplace=True)
+    interpolator.interpolate_weather_data(weather_df, config.SHARED_START_TIMESTAMP, config.SHARED_END_TIMESTAMP, inplace=True)
 
     weather_df.to_pickle(config.WEATHER_PREPROCESSED_DATASET_PATH)
 

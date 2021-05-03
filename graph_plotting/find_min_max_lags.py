@@ -13,8 +13,8 @@ import config
 
 
 def main():
-    start_datetime = datetime.datetime(2019, 1, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
-    end_datetime = datetime.datetime(2019, 5, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
+    start_datetime = datetime.datetime(2019, 1, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
+    end_datetime = datetime.datetime(2019, 5, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
     calc_step = pd.Timedelta(hours=360)
     average_size = 100
 

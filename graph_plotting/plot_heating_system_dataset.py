@@ -10,8 +10,8 @@ from boiler.constants import column_names
 import config
 
 if __name__ == '__main__':
-    start_datetime = datetime.datetime(2018, 12, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
-    end_datetime = datetime.datetime(2019, 3, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
+    start_datetime = datetime.datetime(2018, 12, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
+    end_datetime = datetime.datetime(2019, 3, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
     dataset_path = config.BOILER_PREPROCESSED_HEATING_CIRCUIT_DATASET_PATH
     # dataset_path = f"{config.HOMES_PREPROCESSED_HEATING_CIRCUIT_DATASETS_DIR}\\engelsa_37.csv.pickle"
 

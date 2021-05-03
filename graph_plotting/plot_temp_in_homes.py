@@ -12,8 +12,8 @@ import config
 
 
 def main():
-    start_datetime = datetime.datetime(2018, 12, 1, 23, 0, 0, tzinfo=gettz(config.TIMEZONE))
-    end_datetime = datetime.datetime(2019, 3, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
+    start_datetime = datetime.datetime(2018, 12, 1, 23, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
+    end_datetime = datetime.datetime(2019, 3, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
     homes_in_temp_smooth_size = 100
     boiler_temp_smooth_size = 100
     # noinspection SpellCheckingInspection

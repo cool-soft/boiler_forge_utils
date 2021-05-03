@@ -13,8 +13,8 @@ from boiler.time_delta.std_var_time_delta_calculator import StdVarTimeDeltaCalcu
 
 
 def main():
-    start_datetime = datetime.datetime(2019, 1, 15, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
-    end_datetime = datetime.datetime(2019, 4, 1, 0, 0, 0, tzinfo=gettz(config.TIMEZONE))
+    start_datetime = datetime.datetime(2019, 1, 15, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
+    end_datetime = datetime.datetime(2019, 4, 1, 0, 0, 0, tzinfo=gettz(config.DEFAULT_TIMEZONE))
     calc_step = pd.Timedelta(hours=180)
     boiler_temp_round_step = 0.1
     min_lag = 1
