@@ -71,7 +71,7 @@ def main():
     timedelta_writer = SyncTimedeltaCSVWriter()
     timedelta_dumper = SyncTimedeltaFileDumper(
         writer=timedelta_writer,
-        filepath=config.HEATING_OBJ_TIME_DELTAS_PATH
+        filepath=config.HEATING_OBJ_TIMEDELTA_PATH
     )
     timedelta_dumper.dump_timedelta(timedelta_df)
 
