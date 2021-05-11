@@ -1,6 +1,6 @@
 import logging
 
-from boiler.constants import circuit_ids
+from boiler.constants import circuit_types
 from boiler.constants import column_names
 from boiler.data_processing.timestamp_interpolator_algorithm import TimestampInterpolationAlgorithm
 from boiler.data_processing.timestamp_round_algorithm import CeilTimestampRoundAlgorithm
@@ -34,7 +34,7 @@ def load_boiler_dataset():
         float_columns=soft_m_parsing_parameters.BOILER_FLOAT_COLUMNS,
         water_temp_columns=[column_names.FORWARD_PIPE_COOLANT_TEMP,
                             column_names.BACKWARD_PIPE_COOLANT_TEMP],
-        need_circuit=circuit_ids.HEATING_CIRCUIT
+        need_circuit=circuit_types.HEATING
     )
     loader = SyncHeatingObjFileLoader(
         filepath=config.BOILER_SRC_DATASET_PATH,
