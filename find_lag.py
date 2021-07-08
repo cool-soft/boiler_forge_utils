@@ -2,13 +2,13 @@ import datetime
 import os
 
 import pandas as pd
-from boiler.time_delta.io.sync_timedelta_csv_writer import SyncTimedeltaCSVWriter
-from boiler.time_delta.io.sync_timedelta_file_dumper import SyncTimedeltaFileDumper
+from boiler.timedelta.io.sync_timedelta_csv_writer import SyncTimedeltaCSVWriter
+from boiler.timedelta.io.sync_timedelta_file_dumper import SyncTimedeltaFileDumper
 from dateutil.tz import gettz
 from boiler.constants import column_names, dataset_prototypes
 from boiler.heating_obj.io.sync_heating_obj_file_loader import SyncHeatingObjFileLoader
 from boiler.heating_obj.io.sync_heating_obj_pickle_reader import SyncHeatingObjPickleReader
-from boiler.time_delta.calculators.algo.std_var_time_delta_calculation_algorithm \
+from boiler.timedelta.calculators.algo.std_var_time_delta_calculation_algorithm \
     import StdVarTimeDeltaCalculationAlgorithm
 from boiler_softm.constants import time_tick as soft_m_time_tick
 
